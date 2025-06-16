@@ -3,20 +3,26 @@ import { invoke } from "@tauri-apps/api/core";
 let greetInputEl: HTMLInputElement | null;
 let greetMsgEl: HTMLElement | null;
 
-async function greet() {
+async function contour() {
   if (greetMsgEl && greetInputEl) {
-    // Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
-    greetMsgEl.textContent = await invoke("greet", {
-      name: greetInputEl.value,
+    invoke("contour", {
+      imgPath: greetInputEl.value,
     });
   }
 }
+
+// async function addDependencyEl(command: string) {
+//   invoke("process_exists", { cmd: command });
+// }
+
+// (window as any).addDependencyEl = addDependencyEl;
+// console.log("Hello");
 
 window.addEventListener("DOMContentLoaded", () => {
   greetInputEl = document.querySelector("#greet-input");
   greetMsgEl = document.querySelector("#greet-msg");
   document.querySelector("#greet-form")?.addEventListener("submit", (e) => {
     e.preventDefault();
-    greet();
+    contour();
   });
 });

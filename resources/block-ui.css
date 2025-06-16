@@ -1,0 +1,23 @@
+.ui {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.ui .content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  margin: 1rem;
+  outline: solid 2px black;
+  padding: 1rem;
+  background: lightyellow;
+
+  font-size: 1.1rem;
+  font-family: monospace;
+  font-weight: 500;
+}

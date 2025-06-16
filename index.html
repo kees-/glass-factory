@@ -2,7 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <link rel="stylesheet" href="/src/styles.css" />
+        <link rel="stylesheet" href="/resources/styles.css" />
+        <link rel="stylesheet" href="/resources/block-ui.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Tauri App</title>
         <script type="module" src="/src/main.ts" defer></script>
@@ -12,21 +13,31 @@
         <main class="container">
             <h1>Glass Factory</h1>
 
-            <div>
-                <h2>Dependencies</h2>
-                <ul>
-                    <li>ffmpeg</li>
-                    <li>opencv</li>
-                </ul>
-            </div>
-
-            <div>
-                <h2>Masks</h2>
-                <form class="row" id="greet-form">
-                    <input id="greet-input" placeholder="Supply a file" />
-                    <button type="submit">Generate masks</button>
-                </form>
-                <p id="greet-msg"></p>
+            <div class="ui">
+                <div class="content">
+                    <span>Hello</span>
+                    <button>Press me</button>
+                    <button>Delete</button>
+                </div>
+                <div class="content">
+                    <span>Imogen Memory</span>
+                    <img id="img-frame" src="" />
+                </div>
+                <div class="content">
+                    <span>Masks</span>
+                    <form id="greet-form">
+                        <input id="greet-input" placeholder="Supply a file" />
+                        <button type="submit">Generate masks</button>
+                    </form>
+                    <p id="greet-msg"></p>
+                </div>
+                <div class="content">
+                    <span>Dependencies</span>
+                    <ul>
+                        <li>ffmpeg</li>
+                        <li>opencv</li>
+                    </ul>
+                </div>
             </div>
         </main>
     </body>

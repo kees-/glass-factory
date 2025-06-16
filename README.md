@@ -1,12 +1,8 @@
 ## Run
 
-Start server
-
 ```sh
-pnpm run dev
+pnpm run tauri dev
 ```
-
-Then run task..?
 
 ---
 

@@ -11,18 +11,26 @@
 
     <body>
         <main class="container">
-            <h1>Glass Factory</h1>
-
             <div class="ui">
                 <div class="content">
-                    <span>Hello</span>
-                    <button>Press me</button>
-                    <button>Delete</button>
+                    <span>Populate your text</span>
+                    <input
+                        id="pregen-command-input"
+                        placeholder="Sample text"
+                    />
+                    <button id="pregen-command-submit">Press me</button>
+                    <textarea
+                        id="pregen-command-output"
+                        rows="4"
+                        cols="40"
+                    ></textarea>
                 </div>
+
                 <div class="content">
                     <span>Imogen Memory</span>
                     <img id="img-frame" src="" />
                 </div>
+
                 <div class="content">
                     <span>Masks</span>
                     <form id="greet-form">

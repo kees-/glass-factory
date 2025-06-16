@@ -1,3 +1,7 @@
+textarea {
+  font-size: 0.8rem;
+}
+
 .ui {
   display: flex;
   flex-direction: row;
